@@ -12,7 +12,6 @@ before_deploy:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $TRAVIS_DEPLOY_TOKEN
-  token: $TRAVIS_DEPLOY_TOKEN
+  github_token: '$GITHUB_TOKEN'
   on:
     branch: master
