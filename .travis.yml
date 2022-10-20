@@ -12,6 +12,6 @@ before_deploy:
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: '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'
+  github_token: "$GITHUB_TOKEN"
   on:
     branch: master
